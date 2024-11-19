@@ -1,3 +1,38 @@
 .navbar .btn-outline-light:hover{
     color :var(--bs-dark);
 }
+.header{
+    background: url(../images/header-background.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.navbar{
+    transition: all 0.5s;
+}
+
+.navbar-sticky{
+    opacity: 0.9;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width:1000px) {
+    .hero{
+        .img-container {
+            display: flex;
+            justify-content: center;
+        }
+        .text-container{
+            text-align: center;
+        }    
+    }
+
+    .icons .container-xl{
+        width : 80%;
+    }
+
+    .navbar{
+        background-color: var(--bs-dark);
+        transition: all 0.5s;
+    }
+
+}
